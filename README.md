@@ -13,7 +13,7 @@ support@tbank.ru IL0v3T3st1ng
 https://prod-team-8-t7nj4g3c.final.prodcontest.ru/swagger-ui
 
 ## CI
-Сборка через GitLab CI, собираются Docker образы и отправляются на Registry
+Сборка через GitLab CI, собираются Docker образы и отправляются на K8S Registry
 
 ## CD
 Используется [ArgoCD](https://argo-cd.readthedocs.io/en/stable/). Периодически выполняются запросы на Container Registry и Git репозиторий для получения изменений, если они есть, то ArgoCD подтягивает новые версии контейнеров и перезапсукает.
